@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+
+import sys
+import json
+
+import toml
+
+piped_in = sys.stdin.read()
+
+print(json.dumps(toml.loads(piped_in)))
